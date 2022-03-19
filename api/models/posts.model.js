@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const tagsSchema = new mongoose.Schema(
+const postsSchema = new mongoose.Schema(
   {
     slug: {
       type: String,
@@ -93,4 +93,4 @@ const tagsSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-export const Tag = mongoose.model("Tag", tagsSchema);
+export const Post = mongoose.model("Post", postsSchema);
